@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-01-components/static/js/main.7aa234a8.chunk.js",
-    "main.js.map": "/goit-react-hw-01-components/static/js/main.7aa234a8.chunk.js.map",
-    "runtime-main.js": "/goit-react-hw-01-components/static/js/runtime-main.e512bb13.js",
-    "runtime-main.js.map": "/goit-react-hw-01-components/static/js/runtime-main.e512bb13.js.map",
-    "static/js/2.ae47b9a3.chunk.js": "/goit-react-hw-01-components/static/js/2.ae47b9a3.chunk.js",
-    "static/js/2.ae47b9a3.chunk.js.map": "/goit-react-hw-01-components/static/js/2.ae47b9a3.chunk.js.map",
-    "index.html": "/goit-react-hw-01-components/index.html",
-    "precache-manifest.923e0ca440e7e32419975715437a76fe.js": "/goit-react-hw-01-components/precache-manifest.923e0ca440e7e32419975715437a76fe.js",
-    "service-worker.js": "/goit-react-hw-01-components/service-worker.js",
-    "static/js/2.ae47b9a3.chunk.js.LICENSE.txt": "/goit-react-hw-01-components/static/js/2.ae47b9a3.chunk.js.LICENSE.txt"
+    "main.js": "/goit-react-hw-01-components/hw-1_react-components/static/js/main.7aa234a8.chunk.js",
+    "main.js.map": "/goit-react-hw-01-components/hw-1_react-components/static/js/main.7aa234a8.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-01-components/hw-1_react-components/static/js/runtime-main.6dec9900.js",
+    "runtime-main.js.map": "/goit-react-hw-01-components/hw-1_react-components/static/js/runtime-main.6dec9900.js.map",
+    "static/js/2.ae47b9a3.chunk.js": "/goit-react-hw-01-components/hw-1_react-components/static/js/2.ae47b9a3.chunk.js",
+    "static/js/2.ae47b9a3.chunk.js.map": "/goit-react-hw-01-components/hw-1_react-components/static/js/2.ae47b9a3.chunk.js.map",
+    "index.html": "/goit-react-hw-01-components/hw-1_react-components/index.html",
+    "precache-manifest.cb7a55fffa777c3c72704398b4c74bc1.js": "/goit-react-hw-01-components/hw-1_react-components/precache-manifest.cb7a55fffa777c3c72704398b4c74bc1.js",
+    "service-worker.js": "/goit-react-hw-01-components/hw-1_react-components/service-worker.js",
+    "static/js/2.ae47b9a3.chunk.js.LICENSE.txt": "/goit-react-hw-01-components/hw-1_react-components/static/js/2.ae47b9a3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e512bb13.js",
+    "static/js/runtime-main.6dec9900.js",
     "static/js/2.ae47b9a3.chunk.js",
     "static/js/main.7aa234a8.chunk.js"
   ]
