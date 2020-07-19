@@ -24,25 +24,22 @@ import transactions from './transaction-history/transactions.json';
 export default function App(){
     return (
         
-        <>
+    <>
         <Section title="Profile">
-            <Profile user={user}
-            />
+             <Profile user={user}/>
          </Section>
         
          <Section title="Statistic">
-             <Statistics 
-             statistics={statistics}/> 
+             <Statistics statistics={statistics}/> 
          </Section>
 
          <Section title="FriedsList">
-            <FriendList friends={friends}/>
+             <FriendList friends={friends}/>
          </Section>
 
          <Section title="TransactionHistory">
-             <TransactionHistory 
-             transactions={transactions}/>
-             </Section>
-         </>
+             <TransactionHistory transactions={transactions}/>
+         </Section>
+     </>
     )
 }
