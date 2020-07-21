@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.scss"],"names":[],"mappings":"AAEA,iBAGI,QAAS,CACT,SAAU,CACV,qBAAsB,CACzB,KAIC,wBAAyB","file":"main.8c3e4501.chunk.css","sourcesContent":["\n\n*,\n*::after,\n*::before {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n};\n\n\nbody {\n  background-color: #e7ecf2;\n}\n\n\n"]}
