@@ -1,22 +1,19 @@
 import React from 'react';
-import statistics from './statistical-data.json'
 
-
-// const stats = statistics.map(item => Statistics(item))
 
 
 function Statistics({statistics}){
     return (
-        <section class="statistics">
-  <h2 class="title">Upload stats</h2>
+        <section className="statistics">
+  <h2 className="title">Upload stats</h2>
 
-  <ul class="stat-list">
+  <ul className="stat-list">
       {statistics.map(item => 
         { 
             //to do pdf => reduce
-           return <li class="item" key={item.id} >
-          <span class="label">{item.label} </span>
-          <span class="percentage">{item.percentage} %</span>
+           return <li className="item" key={item.id} >
+          <span className="label">{item.label} </span>
+          <span className="percentage">{item.percentage} %</span>
           </li>
         })
       }

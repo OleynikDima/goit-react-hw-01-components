@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function TransactionHistory({transactions}){
     return (
-        <table class="transaction-history">
+        <table className="transaction-history">
   <thead>
     <tr>
       <th>Type</th>
@@ -28,9 +28,11 @@ function TransactionHistory({transactions}){
 }
 
 TransactionHistory.propTypes ={
+  transaction:PropTypes.exact({
     type:PropTypes.string.isRequired,
     amount:PropTypes.number.isRequired,
     currency:PropTypes.string.isRequired,
+  })
 }
 
 

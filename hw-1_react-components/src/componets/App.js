@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Section';
+import './App.scss'
 
 //Profile 
 import Profile from './social-profile/Profile';
@@ -26,7 +27,13 @@ export default function App(){
         
     <>
         <Section title="Profile">
-             <Profile user={user}/>
+             <Profile 
+             name={user.name}
+             tag={user.tag}
+             location={user.location}
+             avatar={user.avatar}
+             stats={user.stats}
+             />
          </Section>
         
          <Section title="Statistic">

@@ -4,12 +4,12 @@ import PropTypes from 'prop-types'
 
 function FriendList({friends}){
     return (
-     <ul class="friend-list">
+     <ul className="friend-list">
          {friends.map(friend => {
-             return  <li class="item" key={friend.id}>
-                     <span class="status">{friend.isOnline}</span>
-                     <img class="avatar" src={friend.avatar} alt={friend.name} width="48" />
-                     <p class="name">{friend.name}</p>
+             return  <li className="item" key={friend.id}>
+                     <span className="status">{friend.isOnline}</span>
+                     <img className="avatar" src={friend.avatar} alt={friend.name} width="48" />
+                     <p className="name">{friend.name}</p>
                      </li> 
                                 }
                      )
@@ -24,10 +24,12 @@ FriendList.defaultProps ={
 
 
 FriendList.propTypes ={
-    id:PropTypes.number.isRequired,
-    isOnline:PropTypes.string.isRequired,
-    avatar:PropTypes.string.isRequired,
-    name:PropTypes.string.isRequired, 
+    friend:PropTypes.exact({
+        id:PropTypes.string.isRequired,
+        isOnline:PropTypes.string.isRequired,
+        avatar:PropTypes.string.isRequired,
+        name:PropTypes.string.isRequired, 
+    })
 }
 
 export default FriendList;
