@@ -8,7 +8,7 @@ import user from './social-profile/user.json';
 
 //Statistics
 import Statistics from './statistics/Statistics';
-import statistics from './statistics/statistical-data.json'
+import statisticsData from './statistics/statistical-data.json'
 
 //Friend liset
 import FriendList from './friend-list/FriendList';
@@ -37,7 +37,9 @@ export default function App(){
          </Section>
         
          <Section title="Statistic">
-             <Statistics statistics={statistics}/> 
+             <Statistics 
+             title ='Upload stats'
+             statistics={statisticsData}/> 
          </Section>
 
          <Section title="FriedsList">

@@ -1,0 +1,43 @@
+.transaction {
+    margin: 0 auto;
+    width: 874px;
+    margin-bottom: 150px;
+}
+table, td, th {
+    border: 1px solid #e0e6e7;
+  }
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+  }
+
+th, td {
+
+    height: 50px;
+  }
+
+th {
+     
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #00bcd4;
+  }
+td {
+    width: 33%;
+    text-align: center;
+    font-size: 15px;
+    color: #5c6975;
+    font-weight: 300;
+    font-family: "Helvetica Neue Cyr";
+}
+
+.tdtype {
+    padding-left: 14%;
+    text-align: start;
+}
+
+.colorHistory {
+      background-color: #ecf2f3;
+  }
