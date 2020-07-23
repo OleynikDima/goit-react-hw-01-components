@@ -26,7 +26,7 @@ export default function App(){
     return (
         
     <>
-        <Section title="Profile">
+         <Section title="Profile">
              <Profile 
              name={user.name}
              tag={user.tag}

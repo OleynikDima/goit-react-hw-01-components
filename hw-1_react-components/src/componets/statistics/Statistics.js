@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import styles from './Statistics.module.css'
 
 
+// немного запутался в title он в принцыпе есть в секции но тут я сделал div (в задание давалось иначе )
+
 
 function Statistics({title,statistics}){
 
@@ -16,12 +18,15 @@ function Statistics({title,statistics}){
               : 0)
               .map(item => 
                   {
+                    //random color 
+                    const rgb = 
+                    'rgb(' + Math.floor(Math.random()*256) 
+                     + ',' + Math.floor(Math.random()*256)
+                     + ',' + Math.floor(Math.random()*256) 
+                     + ')'
+
                      return <li style={{
-                       backgroundColor:
-                       'rgb(' + Math.floor(Math.random()*256) 
-                         + ',' + Math.floor(Math.random()*256)
-                        + ',' + Math.floor(Math.random()*256) + ')'
-                        }} 
+                       backgroundColor:rgb}} 
                         className={styles.item} key={item.id} >
                         <span className={styles.label}>{item.label} </span>
                         <span className={styles.percentage}>{item.percentage} %</span>

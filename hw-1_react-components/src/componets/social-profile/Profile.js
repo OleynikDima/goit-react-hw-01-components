@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+
+// пробовал написать inline -js .. не сильно зашло но разобраться стоило 
 const BOX_PROFILE = styled.div`
         width:250px;
         height:330px;

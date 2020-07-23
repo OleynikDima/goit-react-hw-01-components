@@ -2,22 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import styles from './TransactionHistory.module.scss'
 
+
+// функция возвращает елемент с большой буквы 
 function UpperCaseFirstWord(word){
   return word.split('')[0].toUpperCase() + word.slice(1)
 }
 
+
 function TransactionHistory({transactions}){
  
-  const arrayHistory = transactions.map((transaction,ind) => {
-    const styColor  = ind % 2 === 0 ? styles.colorHistory: 0
+  const arrayHistoryRow = transactions.map((transaction,ind) => {
+    // чередуем стиль каждой строки 
+     const styColor  = ind % 2 === 0 ? styles.colorHistory: 0
 
+    // возвращает  row
     return <tr key={transaction.id} className ={styColor}>
               <td className={styles.tdtype}>{UpperCaseFirstWord(transaction.type)}</td>
               <td>{transaction.amount}</td>
               <td>{transaction.currency}</td>
            </tr>
 })
-
+  // возвращаем таблицу
     return (
         <table className={styles.transaction}>
   <thead >
@@ -28,13 +33,15 @@ function TransactionHistory({transactions}){
     </tr>
   </thead>
 
-  <tbody className={styles.body}>
-      {arrayHistory}
+  <tbody >
+      {arrayHistoryRow}
   </tbody>
 </table>
     )
 }
 
+
+// PropTypes
 TransactionHistory.propTypes ={
   transaction:PropTypes.exact({
     type:PropTypes.string.isRequired,
