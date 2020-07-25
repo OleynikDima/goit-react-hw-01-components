@@ -43,7 +43,7 @@ function TransactionHistory({transactions}){
 
 // PropTypes
 TransactionHistory.propTypes ={
-  transaction:PropTypes.exact({
+  transaction:PropTypes.shape({
     type:PropTypes.string.isRequired,
     amount:PropTypes.number.isRequired,
     currency:PropTypes.string.isRequired,

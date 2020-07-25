@@ -4,7 +4,7 @@ import styles from './FriendList.module.css'
 
 
 function FriendList({friends}){
-    
+    // style online user
     const onLine = (onLine) => 
         onLine ? styles.statusOnLine :styles.statusOffLine
 
@@ -30,8 +30,8 @@ FriendList.defaultProps ={
 
 FriendList.propTypes ={
     friend:PropTypes.exact({
-        id:PropTypes.string.isRequired,
-        isOnline:PropTypes.string.isRequired,
+        id:PropTypes.string,
+        isOnline:PropTypes.bool.isRequired,
         avatar:PropTypes.string.isRequired,
         name:PropTypes.string.isRequired, 
     })

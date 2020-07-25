@@ -100,6 +100,10 @@ const SpanQuantity = styled.span`
 
 //Create Temp 
 function Profiler({name,tag,location,avatar,stats}){
+  // to add commas
+  const numberWithCommas = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+
+
     return (
       <BOX_PROFILE className="profile">
         <Description className="description">
@@ -120,7 +124,7 @@ function Profiler({name,tag,location,avatar,stats}){
           </Li>
           <BorderLi>
             <SpanLabel className="label">Views </SpanLabel>
-            <SpanQuantity className="quantity">{stats.views}</SpanQuantity>
+            <SpanQuantity className="quantity">{numberWithCommas(stats.views)}</SpanQuantity>
           </BorderLi>
           <Li>
             <SpanLabel className="label">Likes </SpanLabel>

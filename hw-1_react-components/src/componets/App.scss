@@ -1,4 +1,6 @@
 
+@import './fonts/font.scss';
+
 
 *,
 *::after,
@@ -13,4 +15,7 @@ body {
   background-color: #e7ecf2;
 }
 
-
+section {
+  padding-left: 40px;
+  text-align: starts;
+}
