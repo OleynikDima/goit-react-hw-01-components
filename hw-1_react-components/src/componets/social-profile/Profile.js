@@ -29,6 +29,7 @@ const Description = styled.div`
     align-items:center;
     justify-content:space-between;
     height:256px;
+    border-radius:2% 2% 0 0;
     background-color:white;
 `;
 
