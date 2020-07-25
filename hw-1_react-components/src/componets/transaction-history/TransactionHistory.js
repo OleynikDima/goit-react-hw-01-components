@@ -13,7 +13,7 @@ function TransactionHistory({transactions}){
  
   const arrayHistoryRow = transactions.map((transaction,ind) => {
     // чередуем стиль каждой строки 
-     const styColor  = ind % 2 === 0 ? styles.colorHistory: 0
+     const styColor  = ind % 2 !== 0 ? styles.colorHistory: 0
 
     // возвращает  row
     return <tr key={transaction.id} className ={styColor}>
